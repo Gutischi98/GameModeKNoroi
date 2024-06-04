@@ -1,0 +1,5 @@
+main: mp.Gutischigami.MiPlugin
+version: 1.0.0
+name: GameModeKNoroi
+author: Gutischigami
+api-version: 1.13
