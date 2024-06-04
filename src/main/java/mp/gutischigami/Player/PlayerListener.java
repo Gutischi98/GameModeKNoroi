@@ -5,10 +5,11 @@ import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerGameModeChangeEvent;
-import java.net.http.WebSocket;
 
-public class PlayerListener implements WebSocket.Listener {
+
+public class PlayerListener implements Listener {
 
     private PluginGMKN plugin;
 
