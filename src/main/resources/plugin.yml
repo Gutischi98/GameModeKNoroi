@@ -1,4 +1,4 @@
-main: mp.Gutischigami.MiPlugin
+main: mp.Gutischigami.GameModeKNoroi
 version: 1.0.0
 name: GameModeKNoroi
 author: Gutischigami
