@@ -1,4 +1,4 @@
-package mp.gutischigami.Utils;
+package mp.Gutischigami.Utils;
 
 import org.bukkit.ChatColor;
 

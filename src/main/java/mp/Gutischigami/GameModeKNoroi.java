@@ -1,14 +1,12 @@
-package mp.gutischigami;
-import mp.gutischigami.Player.PlayerListener;
+package mp.Gutischigami;
+import mp.Gutischigami.Player.PlayerListener;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
-import static mp.gutischigami.Utils.MessageUtils.getColoredMessage;
+import static mp.Gutischigami.Utils.MessageUtils.getColoredMessage;
 
-public class PluginGMKN extends JavaPlugin {
+public class GameModeKNoroi extends JavaPlugin {
 
-    public static String prefix = "&3[&6GameModeDetector]";
+    public static String prefix = "&3[&6GameModeDetectorNoroi]";
     private final String version = getDescription().getVersion();
 
     public void onEnable(){

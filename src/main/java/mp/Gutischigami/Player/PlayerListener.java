@@ -1,6 +1,6 @@
-package mp.gutischigami.Player;
-import mp.gutischigami.PluginGMKN;
-import mp.gutischigami.Utils.MessageUtils;
+package mp.Gutischigami.Player;
+import mp.Gutischigami.GameModeKNoroi;
+import mp.Gutischigami.Utils.MessageUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
@@ -16,16 +16,16 @@ import java.util.List;
 
 public class PlayerListener implements Listener {
 
-    private PluginGMKN plugin;
+    private GameModeKNoroi plugin;
 
-    public PlayerListener(PluginGMKN plugin){
+    public PlayerListener(GameModeKNoroi plugin){
         this.plugin = plugin;
     }
 
     @EventHandler
     public void onMode(PlayerGameModeChangeEvent event){
     Player player = event.getPlayer();
-        if (player.getGameMode().equals(GameMode.CREATIVE)){
+        if (!player.getGameMode().equals(GameMode.CREATIVE)){
             Bukkit.getServer().broadcastMessage(MessageUtils.getColoredMessage("&cQue pasó &5 " + player.getName() + " &cme salió &d WEKEREKE?"));
         }
     }
@@ -45,6 +45,8 @@ public class PlayerListener implements Listener {
         for (String m : message){
             Bukkit.getServer().broadcastMessage(m);
         }
+
+       // Bukkit.getServer().broadcastMessage("/title @a title [\"\",{\"text\":\"a\",\"obfuscated\":true},\" \",{\"text\":\"[\",\"color\":\"dark_purple\"},\" \",{\"text\":\"Bienvenido\",\"bold\":true,\"color\":\"aqua\"},\" \",{\"text\":\"]\",\"color\":\"dark_purple\"},\" \",{\"text\":\"a\",\"obfuscated\":true}]");
     }
 
 
