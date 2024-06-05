@@ -12,9 +12,7 @@ public class PluginGMKN extends JavaPlugin {
     private final String version = getDescription().getVersion();
 
     public void onEnable(){
-        PlayerListener playerListener = new PlayerListener(this);
-        Bukkit.getPluginManager().registerEvents(playerListener, this);
-
+        registerEvents();
         Bukkit.getConsoleSender().sendMessage(
                 getColoredMessage(prefix + "ha sido iniciado, &cVersion " + version )
         );
@@ -24,6 +22,10 @@ public class PluginGMKN extends JavaPlugin {
         Bukkit.getConsoleSender().sendMessage(
                 getColoredMessage(prefix + "Gracias por utilizarme wapeton")
         );
+    }
+
+    public void registerEvents(){
+        getServer().getPluginManager().registerEvents(new PlayerListener(this),this);
     }
 
 }
