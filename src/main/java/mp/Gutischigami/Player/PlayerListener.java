@@ -45,8 +45,7 @@ public class PlayerListener implements Listener {
         for (String m : message){
             Bukkit.getServer().broadcastMessage(m);
         }
-
-       // Bukkit.getServer().broadcastMessage("/title @a title [\"\",{\"text\":\"a\",\"obfuscated\":true},\" \",{\"text\":\"[\",\"color\":\"dark_purple\"},\" \",{\"text\":\"Bienvenido\",\"bold\":true,\"color\":\"aqua\"},\" \",{\"text\":\"]\",\"color\":\"dark_purple\"},\" \",{\"text\":\"a\",\"obfuscated\":true}]");
+        //Bukkit.getServer().broadcastMessage("/title @a title [\"\",{\"text\":\"a\",\"obfuscated\":true},\" \",{\"text\":\"[\",\"color\":\"dark_purple\"},\" \",{\"text\":\"Bienvenido\",\"bold\":true,\"color\":\"aqua\"},\" \",{\"text\":\"]\",\"color\":\"dark_purple\"},\" \",{\"text\":\"a\",\"obfuscated\":true}]");
     }
 
 
