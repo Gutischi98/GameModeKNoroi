@@ -26,7 +26,7 @@ public class PlayerListener implements Listener {
     public void onMode(PlayerGameModeChangeEvent event){
     Player player = event.getPlayer();
         if (!player.getGameMode().equals(GameMode.CREATIVE)){
-            Bukkit.getServer().broadcastMessage(MessageUtils.getColoredMessage("&9Que &apasó &b " + player.getName() + "&cse &dte &fcayó &9la &dPichula? &bfeliz mes del orgullo &l&n&5MARICÓN"));
+            Bukkit.getServer().broadcastMessage(MessageUtils.getColoredMessage("&9Que &apasó &b " + player.getName() + "&cme salió &bW&5E&bK&5E&bR&5E&bK&5E&f?"));
         } else if (!player.getGameMode().equals(GameMode.SURVIVAL)){
             Bukkit.getServer().broadcastMessage(MessageUtils.getColoredMessage("&cGrande!! &5 " + player.getName() + " &cEso es tener webos"));
         }
